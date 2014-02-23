@@ -5,7 +5,7 @@ module Scoreboard
     include Fetcher
     extend self
 
-    def supported_leagues
+    def leagues
       [:nba, :nfl] 
     end
 
@@ -15,6 +15,6 @@ module Scoreboard
   end
 end
 
-Scoreboard::ESPN.supported_leagues.each do |name|
+Scoreboard::ESPN.leagues.each do |name|
   require "scoreboard/sources/espn/#{name}"
 end
