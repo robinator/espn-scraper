@@ -1,7 +1,7 @@
 ERROR_CHECKS = 1
 
 require 'test/unit'
-require 'espn_scraper'
+require 'scoreboard'
 
 class EspnTest < Test::Unit::TestCase
   class << self
@@ -13,8 +13,8 @@ class EspnTest < Test::Unit::TestCase
   end
 
   def all_names_present?(ary)
-    ary.map do |obj|
-      h, a = obj[:home_team], obj[:away_team]
+    ary.map do |score|
+      h, a = score.home_team, score.away_team
       test = h.nil? || (h && h.empty?) || a.nil? || (a && a.empty?)
       puts h, a if test
       test

@@ -22,40 +22,6 @@ ESPN.leagues
 
 Which are the NFL, MLB, NBA, NHL, NCAA D1 Football, NCAA D1 Men's Basketball respectively.
 
-#### Scrape Divisions
-
-You can get all the divisions in each league.
-
-```ruby
-ESPN.get_divisions
-# => {
-#   "nfl" => [
-#     { :name => "NFC East", :data_name => "nfc-east" },
-#     { :name => "NFC West", :data_name => "nfc-west" },
-#     ...
-#   ],
-#   "mlb" => ...
-# }
-```
-
-#### Scrape teams
-
-You can get the teams in each league by acronym. It returns a hash of each division with an array of hashes for each team in the division.
-
-```ruby
-ESPN.get_teams_in('nba')
-# => {
-#   "atlantic"=> [ 
-#     { :name => "Boston Celtics", :data_name => "bos" },  
-#     { :name => "Brooklyn Nets", :data_name => "bkn" }, 
-#     { :name => "New York Knicks", :data_name => "ny" }, 
-#     { :name => "Philadelphia 76ers", :data_name => "phi" }, 
-#     { :name => "Toronto Raptors", :data_name => "tor" }
-#   ]
-#   "pacific" => ...
-# }
-```
-
 #### Scraping scores
 
 All score requests return an array of hashes. Here's an example NFL score hash:
@@ -106,7 +72,7 @@ gem 'espn_scraper', github: 'aj0strow/espn-scraper'
 ..and then require it. I personally use it in rake tasks of a Rails app.
 
 ```ruby
-require 'espn_scraper'
+require 'scoreboard'
 ```
 
 ## Contributing
