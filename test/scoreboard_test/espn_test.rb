@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class BoilerplateTest < EspnTest
+class BoilerplateTest < ScoreboardTest
 
   test 'espn is up' do
     assert ESPN.responding?

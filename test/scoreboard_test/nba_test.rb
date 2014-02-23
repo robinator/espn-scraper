@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class NbaTest < EspnTest
+class NbaTest < ScoreboardTest
 
   test 'nba december 25th celtics beat nets' do
     day = Date.parse('Dec 25, 2012')
@@ -21,5 +21,5 @@ class NbaTest < EspnTest
       assert all_names_present?(scores), "Error on #{day} for nba"
     end
   end
-  
+
 end

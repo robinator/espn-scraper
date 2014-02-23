@@ -3,7 +3,7 @@ ERROR_CHECKS = 1
 require 'test/unit'
 require 'scoreboard'
 
-class EspnTest < Test::Unit::TestCase
+class ScoreboardTest < Test::Unit::TestCase
   class << self
     
     def test(test_name, &block)
@@ -29,7 +29,4 @@ class EspnTest < Test::Unit::TestCase
     whole_year.to_a.sample(amount)
   end
 
-  def random_weeks(amount = ERROR_CHECKS)
-    (1..17).to_a.sample(amount)
-  end
 end

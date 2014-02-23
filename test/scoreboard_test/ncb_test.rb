@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class NcbTest < EspnTest
+class NcbTest < ScoreboardTest
   
   test 'mens college basketball march 15th murray state beats colorado state' do
     day = Date.parse('Mar 15, 2012')

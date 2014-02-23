@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class MlbTest < EspnTest
+class MlbTest < ScoreboardTest
   
   test 'mlb august 13th yankees beat rangers' do
     day = Date.parse('Aug 13, 2012')

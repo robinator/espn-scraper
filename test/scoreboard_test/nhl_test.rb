@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class NhlTest < EspnTest
+class NhlTest < ScoreboardTest
 
   test 'nhl rangers beat bruins on valentines day' do
     day = Date.parse('Feb 14, 2012')
