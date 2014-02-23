@@ -14,6 +14,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'httparty'
   s.add_dependency 'nokogiri'
 
-  s.files       = `git ls-files`.split("\n")
+  # s.files       = `git ls-files`.split("\n")
+  s.files = `ls`.split("\n")
   s.test_files  = `git ls-files -- test`.split("\n")
 end
