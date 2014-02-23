@@ -23,7 +23,12 @@ Which are the NFL, NBA. I plan on adding support for the MLB, NHL, NCAA D1 Footb
 All score requests return an array of score objects. Here's an example NFL score:
 
 ```ruby
-#<Scoreboard::Score @date=Sat, 22 Feb 2014, @home_team="Bobcats", @away_team="Grizzlies", @home_score=92, @away_score=89> 
+#<Scoreboard::Score
+  @date=Sat, 22 Feb 2014,
+  @home_team="Bobcats",
+  @away_team="Grizzlies",
+  @home_score=92,
+  @away_score=89>
 ```
 
 Pattern is `Scoreboard::{Source}.scores(:league, date)`.
