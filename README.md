@@ -1,7 +1,7 @@
 # Scoreboard
 
 Scoreboard is a simple gem for scraping teams and scores from websites. Currently only ESPN is supported, but more sites are to follow.
-This code is a fork of (and borrows heavily from) aj0strow's [espn-scraper](https://github.com/aj0strow/espn-scraper)
+This code is a fork of (and borrows heavily from) aj0strow's awesome [espn-scraper](https://github.com/aj0strow/espn-scraper).
 ```ruby
 Scoreboard::ESPN.responding?
 # => true
@@ -23,10 +23,10 @@ Which are the NFL, NBA. I plan on adding support for the MLB, NHL, NCAA D1 Footb
 All score requests return an array of score objects. Here's an example NFL score:
 
 ```ruby
-#<Scoreboard::Score:0x007ffa1ca07e40 @date=Sat, 22 Feb 2014, @home_team="Bobcats", @away_team="Grizzlies", @home_score=92, @away_score=89> 
+#<Scoreboard::Score @date=Sat, 22 Feb 2014, @home_team="Bobcats", @away_team="Grizzlies", @home_score=92, @away_score=89> 
 ```
 
-Pattern is `Scoreboard::ESPN.scores(:league, date)`.
+Pattern is `Scoreboard::{Source}.scores(:league, date)`.
 
 ```ruby
 Scoreboard::ESPN.scores(:mlb, Date.parse('Aug 13, 2012'))
