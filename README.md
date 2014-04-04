@@ -46,7 +46,7 @@ Add the gem to your `Gemfile`
 ```ruby
 gem 'scoreboard', git: 'git://github.com/robinator/scoreboard.git'
 # or
-gem 'espn_scraper', github: 'robinator/scoreboard'
+gem 'scoreboard', github: 'robinator/scoreboard'
 ```
 
 ..and then require it.
